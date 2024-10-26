@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Chave</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .input-group {
+            margin-bottom: 15px;
+        }
+        
+        #keyInput {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        #activate {
+            background-color: #44c767;
+            background-image: linear-gradient(#44c767, #64e787);
+            border-radius: 28px;
+            border: 1px solid #18ab29;
+            color: #ffffff;
+            font-size: 17px;
+            padding: 11px 31px;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        #status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+        
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <input type="text" id="keyInput" placeholder="Digite sua chave de ativação">
+        <button id="activate">Validar Chave</button>
+    </div>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
